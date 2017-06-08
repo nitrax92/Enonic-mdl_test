@@ -1,6 +1,6 @@
 <div class="mdl-grid">
-    <div data-portal-region="center" class="mdl-cell mdl-cell--12-col">
-        <div data-th-each="component : ${centerRegion.components}" data-th-remove="tag">
+    <div data-portal-region="1" class="mdl-cell mdl-cell--12-col">
+        <div data-th-each="component : ${region1.components}" data-th-remove="tag">
             <div data-portal-component="${component.path}" data-th-remove="tag" />
         </div>
     </div>

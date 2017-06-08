@@ -14,8 +14,8 @@ exports.get = function(req) {
 
     // Define the model
     var model = {
-        leftRegion: component.regions["left"],
-        rightRegion: component.regions["right"]
+        region1: component.regions["1"],
+        region2: component.regions["2"]
     };
 
     // Render a thymeleaf template

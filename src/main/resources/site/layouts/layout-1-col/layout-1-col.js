@@ -14,7 +14,7 @@ exports.get = function(req) {
 
     // Define the model
     var model = {
-        centerRegion: component.regions["center"],
+        region1: component.regions["1"]
     };
 
     // Render a thymeleaf template
