@@ -1,0 +1,10 @@
+<layout>
+    <display-name>Desktop: 25/25/25/25 | Tablet 50/50 | Phone 100</display-name>
+    <config/>
+    <regions>
+        <region name="1"/>
+        <region name="2"/>
+        <region name="3"/>
+        <region name="4"/>
+    </regions>
+</layout>

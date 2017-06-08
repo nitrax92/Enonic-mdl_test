@@ -1,5 +1,5 @@
 <layout>
-    <display-name>50/50</display-name>
+    <display-name>Desktop, Tablet: 50/50 | Phone: 100</display-name>
     <config/>
     <regions>
         <region name="left"/>
