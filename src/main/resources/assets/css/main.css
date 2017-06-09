@@ -1,0 +1,21 @@
+@media screen and (min-width: 840px){
+    .mdl-layout__content {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+}
+
+.mdl-card {
+    width: 100%;
+}
+
+.mdl-layout-title a{
+    text-decoration: none;
+    color: white;
+}
+
+.img-responsive {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}

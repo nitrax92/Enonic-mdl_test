@@ -1,6 +1,31 @@
 <page>
     <display-name>Default</display-name>
-    <config/>
+    <config>
+        <field-set name="Selector">
+            <label>Site Properties</label>
+            <items>
+                <input type="TextLine" name="title">
+                    <label>Title</label>
+                    <occurrences minimum="0" maximum="1"/>
+                </input>
+                <input type="ComboBox" name="color_scheme">
+                    <label>Color Configuration</label>
+                    <occurrences minimum="0" maximum="1"/>
+                    <config>
+                        <option value="purple-indigo">Primary: Purple, Accent: Indigo </option>
+                        <option value="indigo-deep_purple">Primary: Indigo, Accent: Deep Purple</option>
+                        <option value="green-light_green">Primary: Green, Accent: Light Green</option>
+                        <option value="blue_grey-red">Primary: Blue, Accent: Grey-Red</option>
+                    </config>
+                </input>
+                <input type="ImageSelector" name="background-image">
+                    <label>Background Image</label>
+                    <occurrences minimum="0" maximum="1"/>
+                    <config></config>
+                </input>
+            </items>
+        </field-set>
+    </config>
     <regions>
         <region name="mdl-content"/>
     </regions>
