@@ -1,0 +1,20 @@
+<!-- Image card -->
+<style>
+
+    }
+</style>
+
+<div th:if="${image}"  class="image_card mdl-card mdl-shadow--2dp" th:style="'background-image:url(' + ${portal.imageUrl({'_id=' + image, '_scale=block(1000,1000)', '_format=jpeg', '_quality=85'})} + '); background-position: center;background-repeat: no-repeat;background-size: cover;'">
+    <div class="mdl-card__title mdl-card--expand"></div>
+    <div class="mdl-card__actions">
+        <span class="image_card-image__filename">ImageName</span>
+    </div>
+</div>
+
+
+<div th:unless="${image}" class="image_card mdl-card mdl-shadow--2dp"  >
+    <div class="mdl-card__title mdl-card--expand"></div>
+    <div class="mdl-card__actions">
+        <span class="image_card-image__filename">No Image</span>
+    </div>
+</div>

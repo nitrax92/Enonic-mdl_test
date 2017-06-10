@@ -1,0 +1,13 @@
+.image_card.mdl-card {
+    background: url('http://via.placeholder.com/256x256') center / cover;
+}
+.image_card > .mdl-card__actions {
+    height: 52px;
+    padding: 16px;
+    background: rgba(0, 0, 0, 0.3);
+}
+.image_card-image__filename {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+}

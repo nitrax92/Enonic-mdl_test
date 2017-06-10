@@ -31,7 +31,7 @@ exports.get = function (req) {
     // Prepare the model that will be passed to the view
     var model = {
         mainRegion: mainRegion,
-        title: "My Title",
+        title: title,
         bg_img: background_image,
         scheme: color_scheme
     };

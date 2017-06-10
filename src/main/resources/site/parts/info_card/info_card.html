@@ -6,7 +6,7 @@
     -->
 
     <div class="mdl-card__title" th:if="${image_id}" th:style="'background-image:url(' + ${portal.imageUrl({'_id=' + image_id, '_scale=block(500, 300)', '_format=jpeg', '_quality=85'})} + ');'">
-        <h2 class="mdl-card__title-text" >It works!</h2>
+        <h2 class="mdl-card__title-text"  th:text="${info_title}">It works!</h2>
     </div>
 
 
