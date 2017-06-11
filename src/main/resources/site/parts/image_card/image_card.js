@@ -11,14 +11,11 @@ exports.get = function(portal) {
     var component = portalLib.getComponent();
 
     // Find a config variable for the component
-    var info = component.config; //['info'] || [];
+    var info = component.config || []; //['info'] || [];
 
-    //var info = []
-
-    log.info(info['image']);
     // Define the model
     var model = {
-        image: info['image']
+        image: info['image'] || 'False'
     };
 
     // Resolve the view

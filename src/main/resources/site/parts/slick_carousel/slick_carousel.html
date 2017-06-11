@@ -1,7 +1,10 @@
-<div class="slick_carousel">
-    <div></div>
-    <div>your content</div>
-    <div>your content</div>
+<div data-th-if="${images}" class="slick_carousel" style="height: 400px;">
+    <div data-th-if="${images}" data-th-each="image : ${images}">
+        <div style="text-align: center;">
+            <img data-th-if="${image}" src="" data-th-src="${portal.imageUrl({'_id=' + image, '_scale=block(600, 600)', '_format=jpeg', '_quality=85'})}" alt="" style="margin: auto;"/>
+        </div>
+
+    </div>
 </div>
 
 <!-- Slick -->
@@ -12,6 +15,12 @@
 <script type="text/javascript">
     $(document).ready(function(){
         $('.slick_carousel').slick({
+            dots: true,
+            infinite: true,
+            speed: 2000,
+            adaptiveHeight: true,
+            autoplay: true,
+            autoplaySpeed: 3000,
     });
     });
 </script>

@@ -13,7 +13,15 @@ exports.get = function(portal) {
     // Resolve the view
     var view = resolve('slick_carousel.html');
 
-    var model = {};
+    var info = component.config || []; //['info'] || [];
+
+    log.info(info['images']);
+
+    // Define the model
+    var model = {
+        images: info['images']
+    };
+
 
     // Render a thymeleaf template
     var body = thymeleaf.render(view, model);
