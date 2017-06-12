@@ -16,6 +16,8 @@
                         <option value="indigo-deep_purple">Primary: Indigo, Accent: Deep Purple</option>
                         <option value="green-light_green">Primary: Green, Accent: Light Green</option>
                         <option value="blue_grey-red">Primary: Blue, Accent: Grey-Red</option>
+                        <option value="cyan-blue">Primary: Cyan, Accent: Blue</option>
+                        <option value="red-blue">Primary: Red, Accent: Blue</option>
                     </config>
                 </input>
                 <input type="ImageSelector" name="background-image">

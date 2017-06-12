@@ -1,0 +1,16 @@
+<div class="mdl-grid">
+    <h3>Toggles</h3>
+    <div class="mdl-cell mdl-cell--12-col">
+        <h4>Checkbox</h4>
+        <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" th:for="${#ids.next('covered')}">
+            <input type="checkbox" class="mdl-checkbox__input"  th:field="*{covered}" th:checked="true"/>
+            <span class="mdl-checkbox__label" th:text="Checkbox"></span>
+        </label>
+    </div>
+
+</div>
+
+
+
+
+

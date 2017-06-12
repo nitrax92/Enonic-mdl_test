@@ -4,12 +4,22 @@
     <title>Hello world</title>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <!-- Page Wide -->
+    <link data-th-href="@{https://fonts.googleapis.com/icon?family=Material+Icons}" rel="stylesheet" />
+    <link data-th-href="${portal.assetUrl({'_path=/material-design-lite/1.3.0/dist/material.' + scheme + '.min.css'})}" href="../assets/cards/css/cards.css" rel="stylesheet"/>
     <!--
     <link data-th-href="${portal.assetUrl({'_path=material-design-lite/1.3.0/material.min.css'})}" rel="stylesheet"/>
-    -->
+
     <link data-th-href="@{https://fonts.googleapis.com/icon?family=Material+Icons}" rel="stylesheet" />
     <link th:href="@{'https://code.getmdl.io/1.3.0/material.'+ ${scheme} + '.min.css'}" rel="stylesheet" />
+    -->
 
+
+
+
+
+    <!-- PARTS TOdo: Move to more fitting location.-->
     <!-- Card Part Styling -->
     <link data-th-href="${portal.assetUrl({'_path=cards/css/cards.css'})}" href="../assets/cards/css/cards.css" rel="stylesheet"/>
     <link data-th-href="${portal.assetUrl({'_path=cards/css/image_card.css'})}" href="../assets/cards/css/image_card.css" rel="stylesheet"/>
@@ -18,6 +28,9 @@
     <link rel="stylesheet" type="text/css" th:href="@{'//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css'}" href="slick/slick.css"/>
     <link rel="stylesheet" type="text/css" th:href="@{'//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css'}" href="slick/slick.css"/>
 
+
+    <!-- WebJar importing.   -->
+    <script th:src="${portal.assetUrl({'_path=/angular/1.6.4/angular.min.js'})}"></script>
 
 
     <!-- Main general style-->

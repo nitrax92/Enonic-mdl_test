@@ -1,7 +1,7 @@
 <div data-th-if="${images}" class="slick_carousel" style="height: 400px;">
     <div data-th-if="${images}" data-th-each="image : ${images}">
         <div style="text-align: center;">
-            <img data-th-if="${image}" src="" data-th-src="${portal.imageUrl({'_id=' + image, '_scale=block(600, 600)', '_format=jpeg', '_quality=85'})}" alt="" style="margin: auto;"/>
+            <img data-th-if="${image}" src="" data-th-src="${portal.imageUrl({'_id=' + image, '_scale=block(1000, 400)', '_format=jpeg', '_quality=85'})}" alt="" style="margin: auto;"/>
         </div>
 
     </div>
@@ -20,7 +20,7 @@
             speed: 2000,
             adaptiveHeight: true,
             autoplay: true,
-            autoplaySpeed: 3000,
+            autoplaySpeed: 3000
     });
     });
 </script>
