@@ -46,3 +46,7 @@ exports.get = function (req) {
         body: libs.thymeleaf.render(view, model)
     }
 };
+
+exports.post = function (req) {
+    log.info("Hello!! POST REQUEST. Content: %s" , req)
+}
