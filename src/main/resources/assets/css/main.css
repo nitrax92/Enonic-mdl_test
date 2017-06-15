@@ -21,3 +21,12 @@
     }
 }
 
+
+/* Footer stick to bottom */
+.mdl-layout__content {
+    flex: 1 0 auto;
+}
+
+.mdl-mini-footer {
+    flex: 0 0 auto;
+}

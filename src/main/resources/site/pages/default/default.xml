@@ -19,6 +19,7 @@
                         <option value="cyan-blue">Primary: Cyan, Accent: Blue</option>
                         <option value="red-blue">Primary: Red, Accent: Blue</option>
                     </config>
+                    <default>purple-indigo</default>
                 </input>
                 <input type="ImageSelector" name="background-image">
                     <label>Background Image</label>

@@ -16,7 +16,7 @@ exports.get = function (req) {
         pageTitle: pageTitle
     };
     */
-    var moment = require('/assets/momentjs/2.14.1/min/moment-with-locales.min.js');
+    //var moment = require('/assets/momentjs/2.14.1/min/moment-with-locales.min.js');
 
     //var test_url = req.assetUrl();
     //log.info(test_url);
@@ -47,6 +47,9 @@ exports.get = function (req) {
     }
 };
 
+
+/*
 exports.post = function (req) {
     log.info("Hello!! POST REQUEST. Content: %s" , req)
 }
+*/

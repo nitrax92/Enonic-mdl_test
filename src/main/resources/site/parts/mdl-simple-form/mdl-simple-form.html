@@ -1,10 +1,21 @@
-<form method="post">
+<form method="post" action="" id="my_form" name="my_form" class="my_form mdl-shadow--8dp mdl-color--grey-100" data-th-action="${portal.componentUrl({})}">
     <h1>Simple Input Form</h1>
     <div class="mdl-textfield mdl-js-textfield">
         <label class="mdl-textfield__label" for="sample1">Write some text.</label>
         <input class="mdl-textfield__input" type="text" id="sample1" name="sample1" th:value="*{sample1}" />
     </div>
 
-
-    <button type="submit">Submit</button>
+    <button type="submit" class="my_button mdl-button mdl-js-button  mdl-button--raised mdl-button--colored">Submit</button>
 </form>
+
+
+<script>
+    $('.my_form').submit(function () {
+        console.log("Subtmitted");
+        $('.my_button').click(function (event) {
+            console.log("Button pressed");
+            event.preventDefault();
+        });
+        $this = $(this);
+    });
+</script>

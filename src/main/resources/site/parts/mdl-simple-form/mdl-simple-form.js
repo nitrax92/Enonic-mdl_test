@@ -20,7 +20,6 @@ exports.get = function(req) {
     };
 };
 
-
 exports.post = function (req) {
     log.info("Post Received!");
     // Resolve the view

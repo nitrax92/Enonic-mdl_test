@@ -40,8 +40,7 @@ dependencies {
     //include "com.enonic.xp:lib-websocket:${xpVersion}"
     webjar "org.webjars.npm:material-design-lite:1.3.0"
     webjar "org.webjars.npm:slick-carousel:1.6.0"
-    webjar "org.webjars.npm:angular:1.6.4"
-    webjar "org.webjars:momentjs:2.14.1"
+    webjar "org.webjars:jquery:3.2.1"
 }
 
 repositories {

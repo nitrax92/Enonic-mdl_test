@@ -20,6 +20,8 @@
 
 
     <!-- PARTS TOdo: Move to more fitting location.-->
+    <!-- JQUERY -->
+    <script th:src="${portal.assetUrl({'_path=/jquery/3.2.1/jquery.min.js'})}"></script>
     <!-- Card Part Styling -->
     <link data-th-href="${portal.assetUrl({'_path=cards/css/cards.css'})}" href="../assets/cards/css/cards.css" rel="stylesheet"/>
     <link data-th-href="${portal.assetUrl({'_path=cards/css/image_card.css'})}" href="../assets/cards/css/image_card.css" rel="stylesheet"/>
@@ -41,7 +43,7 @@
 </head>
 <body>
 <div class="mdl-layout mdl-js-layout">
-    <header class="mdl-layout__header">
+    <header class="mdl-layout__header mdl-layout--fixed-header">
         <div class="mdl-layout__header-row">
             <!-- Title -->
             <span class="mdl-layout-title" data-th-text="${title}">Title</span>
@@ -61,26 +63,32 @@
             </div>
         </div>
 
-        <footer class="mdl-mini-footer">
-            <div class="mdl-mini-footer__left-section">
-                <div class="mdl-logo">
-                    Mini-footer Heading
-                </div>
-                <ul class="mdl-mini-footer__link-list">
-                    <li><a href="">Link 1</a></li>
-                    <li><a href="">Link 2</a></li>
-                    <li><a href="">Link 3</a></li>
-                </ul>
-            </div>
-        </footer>
+
 
     </main>
+
+    <footer class="mdl-mini-footer">
+        <div class="mdl-mini-footer__left-section">
+            <div class="mdl-logo">
+                Mini-footer Heading
+            </div>
+            <ul class="mdl-mini-footer__link-list">
+                <li><a href="">Link 1</a></li>
+                <li><a href="">Link 2</a></li>
+                <li><a href="">Link 3</a></li>
+            </ul>
+        </div>
+    </footer>
 
 
 </div>
 
 
 
+<!-- MDL lib Script -->
 <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+
+<!-- PAGE JS -->
+<script th:src="${portal.assetUrl({'_path=/js/main.js'})}"></script>
 </body>
 </html>
